@@ -140,8 +140,34 @@ class PassportProvider(FakerPassportProvider):
         "95"
     ]
 
-    # def passport_full(self) -> str:
-    #     PassportProvider.passport_number()
+    def passport_full(self) -> str:
+        dept_code = self.department_code().replace("-", "")
+        series_number = self.passport_series()
+
+        number = self.passport_number()
+        full_series_number = self.passport_series_number()
+
+        issuing_authority = self.passport_issuing_authority(dept_code)
+
+        templates = [
+            "{series_number} выдан {authority}",
+            "{series_number}, выдан {authority}",
+            "Паспорт {series_number} выдан {authority}",
+            "{series_number} выдано {authority}",
+            "{series_number} (выдан {authority})",
+            "{series_number}. Выдан: {authority}",
+            "серия {series} № {number}, выдан {authority}",
+            "Серия {series}, номер {number}, выдан {authority}",
+        ]
+
+        template = self.generator.random.choice(templates)
+
+        return template.format(
+            series_number=full_series_number,
+            series=series_number,
+            number=number,
+            authority=issuing_authority
+        )
 
     def passport_issuing_authority(self, department_code: str | None = None) -> str:
 
