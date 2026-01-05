@@ -26,10 +26,10 @@ def test_number(passport_provider, num_samples):
 
 
 def test_passport_issuing_authority(passport_provider, num_samples):
-    r = passport_provider.passport_issuing_authority()
-    print(r)
+    # TODO: fix logic + implement test
+    passport_provider.passport_issuing_authority()
 
 
 def test_passport_full(passport_provider, num_samples):
-    r = passport_provider.passport_full()
-    print(r)
+    # TODO: implement test
+    passport_provider.passport_full()
