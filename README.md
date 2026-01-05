@@ -14,10 +14,11 @@ That labels implemented in lib:
 - [X] the authority that issued the passport (PassportProvider.passport_issuing_authority)
 - [X] passport series (PassportProvider.passport_series)
 - [X] passport number (PassportProvider.passport_number)
-- [ ] passport details in one field (Надо реализовать метод PassportProvider.passport_full)
+- [X] passport details in one field (PassportProvider.passport_full)
 - [X] passport series + number in one field (PassportProvider.passport_series_number)
-- [ ] номер вида на жительство
-- [ ] Серия + номер вида на жительство
+- [X] номер вида на жительство (RuResidencePermitProvider.residence_permit_number)
+- [X] Серия + номер вида на жительство (RuResidencePermitProvider.residence_permit_full)
+- [X] Серия вида на жительство (RuResidencePermitProvider.residence_permit_serial)
 - [ ] номер загранпаспорта
 - [ ] Серия + номер загранпаспорта
 - [ ] серия свидетельства о рождении
