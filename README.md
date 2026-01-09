@@ -1,32 +1,42 @@
 ### PII labels
 That labels implemented in lib:
 
-- [x] full name of the employee in one field
-- [x] lastname of the employee
-- [x] client full name in one field
-- [x] client lastname
-- [x] client name
-- [x] client middle name
-- [x] date of birth
+- [X] full name of the employee in one field
+- [X] lastname of the employee
+- [X] client full name in one field
+- [X] client lastname
+- [X] client name
+- [X] client middle name
+- [X] date of birth
 - [?] place of birth
-- [x] nationality (текст)
-- [x] passport department code (PassportProvider.department_code)
+- [X] nationality (текст)
+- [X] passport department code (PassportProvider.department_code)
 - [X] the authority that issued the passport (PassportProvider.passport_issuing_authority)
 - [X] passport series (PassportProvider.passport_series)
 - [X] passport number (PassportProvider.passport_number)
 - [X] passport details in one field (PassportProvider.passport_full)
 - [X] passport series + number in one field (PassportProvider.passport_series_number)
-- [X] номер вида на жительство (RuResidencePermitProvider.residence_permit_number)
-- [X] Серия + номер вида на жительство (RuResidencePermitProvider.residence_permit_full)
-- [X] Серия вида на жительство (RuResidencePermitProvider.residence_permit_serial)
-- [ ] номер загранпаспорта
-- [ ] Серия + номер загранпаспорта
+- [X] номер вида на жительство (RuResidencePermitProvider.residence_permit_number) ?
+- [X] Серия + номер вида на жительство (RuResidencePermitProvider.residence_permit_full) ?
+- [X] Серия вида на жительство (RuResidencePermitProvider.residence_permit_serial) ?
+
+#### Загранпаспорт РФ
+- [X] номер загранпаспорта (Старый формат загранпаспорта)
+- [X] серия загранпаспорта (Старый формат)
+- [X] Номер загранпаспорта (Старый / новый формат)
+- [X] Серия + номер загранпаспорта (Старый / новый формат)
+
+#### Свидетельство о рождении
 - [ ] серия свидетельства о рождении
 - [ ] номер свидетельства о рождении
 - [ ] Серия + номер свидетельства о родении
+
+
+#### Водительское удостоверение
 - [ ] номер водительского удостоверения
 - [ ] временное удостоверение личности
 - [ ] Серия + номер водительского удостоверения
+
 - [ ] разрешение на работу / визу
 - [x] СНИЛС
 - [ ] Номер миграционной карты
