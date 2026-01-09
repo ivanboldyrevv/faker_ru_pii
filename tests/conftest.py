@@ -1,9 +1,10 @@
 import pytest
-from faker import Generator
+from faker import Faker, Generator
 from faker_ru_pii import (
     PassportProvider,
     RuResidencePermitProvider,
-    RuForeignPassportProvider
+    RuForeignPassportProvider,
+    RuBirthCertificateProvider
 )
 
 
@@ -20,6 +21,19 @@ def residence_permit_provider() -> RuResidencePermitProvider:
 @pytest.fixture
 def foreign_passport_provider() -> RuForeignPassportProvider:
     return RuForeignPassportProvider(generator=Generator())
+
+
+PROVIDERS = [
+    RuBirthCertificateProvider
+]
+
+
+@pytest.fixture
+def faker():
+    faker = Faker()
+    for provider in PROVIDERS:
+        faker.add_provider(provider)
+    return faker
 
 
 @pytest.fixture(autouse=True)
