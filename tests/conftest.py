@@ -5,7 +5,8 @@ from faker_ru_pii import (
     RuResidencePermitProvider,
     RuForeignPassportProvider,
     RuBirthCertificateProvider,
-    RuDriverLicenseProvider
+    RuDriverLicenseProvider,
+    RuMilitaryIdProvider
 )
 
 
@@ -26,7 +27,8 @@ def foreign_passport_provider() -> RuForeignPassportProvider:
 
 PROVIDERS = [
     RuBirthCertificateProvider,
-    RuDriverLicenseProvider
+    RuDriverLicenseProvider,
+    RuMilitaryIdProvider
 ]
 
 

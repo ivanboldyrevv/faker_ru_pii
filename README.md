@@ -1,24 +1,6 @@
 ### PII labels
 That labels implemented in lib:
 
-- [X] Full name of the employee in one field (ФИО сотрудника полностью в одном поле)
-- [X] lastname of the employee (Фамилия Сотрудника)
-- [X] client full name in one field (ФИО Клиента полностью в одном поле)
-- [X] client lastname (Фамилия Клиента)
-- [X] client name (Имя Клиента)
-- [X] client middle name (Отчество Клиента)
-- [X] date of birth (дата рождения)
-- [?] place of birth (место рождения)
-- [X] nationality (текст) (гражданство (текст))
-- [X] passport department code (PassportProvider.department_code) (код подразделения (Provider.department_code()))
-- [X] the authority that issued the passport (PassportProvider.passport_issuing_authority) (орган выдавший паспорт)
-- [X] passport series (PassportProvider.passport_series) (серия паспорта РФ)
-- [X] passport number (PassportProvider.passport_number) (номер паспорта РФ)
-- [X] passport details in one field (PassportProvider.passport_full) (Данные паспорта в одном поле)
-- [X] passport series + number in one field (PassportProvider.passport_series_number) (Серия и номер паспорта РФ в одном поле)
-
-Custom providers:
-
 ### RuPassportProvider
 
 Extends Faker's base [`PassportProvider`](https://faker.readthedocs.io/en/master/providers/faker.providers.passport.html).
@@ -60,9 +42,19 @@ All standard `PassportProvider` methods (e.g. `passport_number()`) are overridde
 'Серия 1964 № 615017, выдан Отдел Управления по вопросам миграции МВД России по г. Москве, код подразделения 160-754'
 ```
 
+### RuResidencePermitProvider
+
+
 - [X] номер вида на жительство (RuResidencePermitProvider.residence_permit_number) ?
 - [X] Серия + номер вида на жительство (RuResidencePermitProvider.residence_permit_full) ?
 - [X] Серия вида на жительство (RuResidencePermitProvider.residence_permit_serial) ?
+
+#### EN
+
+#### RU
+
+
+### RuForeignPassport
 
 #### Загранпаспорт РФ
 - [X] номер загранпаспорта (Старый формат загранпаспорта)
@@ -70,50 +62,91 @@ All standard `PassportProvider` methods (e.g. `passport_number()`) are overridde
 - [X] Номер загранпаспорта (Старый / новый формат)
 - [X] Серия + номер загранпаспорта (Старый / новый формат)
 
+#### EN
+
+#### RU
+
+
+### RuBirthCertificateProvider
+
 #### Свидетельство о рождении
 - [X] серия свидетельства о рождении
 - [X] номер свидетельства о рождении
 - [X] Серия + номер свидетельства о родении
 
+#### EN
+
+#### RU
+
+
+#### RuDriverLicense
 
 #### Водительское удостоверение
-- [ ] номер водительского удостоверения
-- [ ] Серия + номер водительского удостоверения
+- [X] номер водительского удостоверения
+- [X] Серия водительского удостоверения
+- [X] Серия + номер водительского удостоверения
 
-- [ ] разрешение на работу / визу
+
+#### EN
+
+#### RU
+
+
+#### RuMilitaryIdProvider
+
+#### EN
+
+#### RU
+
+```python
+>>> fake.military_id_full()
+'ГУ №0939733'
+>>> fake.military_id_series()
+'АБ'
+>>> fake.military_id_number()
+'2819366'
+```
+
+
+Базовые методы
 - [x] СНИЛС
-- [ ] Номер миграционной карты
-- [ ] Серия + номер миграционной карты
-- [ ] Универсальная маска для ДУЛ
 - [x] Teкст адреса регистрации по паспорту
 - [x] Текст адреса места жительства фактический
-- [ ] квартира/офис
 - [x] строение
 - [x] дом
 - [x] Улица и т.п.
-- [ ] Различные элементы адреса ФЛ в одном поле
 - [x] email
 - [x] номер телефона
+- [x] название организации
+- [x] номер машины
+- [x] Полный номер платежной карты
+- [X] ИНН
+- [X] ОГРН
+- [X] Структура данных (xml json и т.д) **Пока только JSON. Нужно добавить XML**
+
+- [ ] разрешение на работу / визу
+- [ ] Номер миграционной карты
+- [ ] Серия + номер миграционной карты
+- [ ] Универсальная маска для ДУЛ
+- [ ] Различные элементы адреса ФЛ в одном поле
 - [ ] Номера телефонов и электронной почты в не нормализованном виде
 - [ ] Наименование учебного заведения
 - [ ] серия диплома/сертификата после 2014 года
 - [ ] серия диплома/сертификата до 2014 года
 - [ ] номер диплома/сертификата
-- [x] название организации
+
 - [ ] Сведения о номере серии и дате выдачи трудовой книжки
 - [ ] военный билет
 - [ ] свидетельство о браке
 - [ ] Кадастровый номер объекта залога
 - [ ] Идентификатор земельного участка
-- [x] номер машины
-- [x] Полный номер платежной карты
+
 - [ ] Имя держателя карты
 - [ ] реквизиты организации ЮЛ
 - [ ] ОКПО
-- [X] ИНН
-- [X] ОГРН
+
 - [ ] ОКОГУ
-- [X] Структура данных (xml json и т.д) **Пока только JSON. Нужно добавить XML**
+
 - [ ] Поля с комментариями (пользовательские)
 - [ ] Поля с описанием платежа
 - [ ] Поля с произвольным содержанием

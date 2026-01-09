@@ -4,13 +4,15 @@ from faker_ru_pii.ru_residence_permit_provider import RuResidencePermitProvider
 from faker_ru_pii.ru_foreign_passport_provider import RuForeignPassportProvider
 from faker_ru_pii.ru_birth_certificate_provider import RuBirthCertificateProvider
 from faker_ru_pii.ru_driver_license import RuDriverLicenseProvider
+from faker_ru_pii.ru_military_id_provider import RuMilitaryIdProvider
 
 providers = [
     PassportProvider,
     RuResidencePermitProvider,
     RuForeignPassportProvider,
     RuBirthCertificateProvider,
-    RuDriverLicenseProvider
+    RuDriverLicenseProvider,
+    RuMilitaryIdProvider
 ]
 
 __all__ = providers
