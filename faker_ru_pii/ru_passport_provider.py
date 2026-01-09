@@ -35,7 +35,6 @@ _SUBJECT_BY_CODE = {
     '26': "Ставропольскому краю",
 }
 
-# Обратный справочник для генерации серии
 _VALID_SUBJECT_CODES = list(_SUBJECT_BY_CODE.keys())
 
 
