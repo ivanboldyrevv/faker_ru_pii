@@ -107,6 +107,22 @@ All standard `PassportProvider` methods (e.g. `passport_number()`) are overridde
 '2819366'
 ```
 
+#### RuEducationProvider
+
+#### EN
+
+#### RU
+
+```python
+>>> fake.military_id_full()
+'ГУ №0939733'
+>>> fake.military_id_series()
+'АБ'
+>>> fake.military_id_number()
+'2819366'
+```
+
+
 
 Базовые методы
 - [x] СНИЛС
