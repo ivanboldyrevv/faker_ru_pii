@@ -6,6 +6,7 @@ from faker_ru_pii.ru_birth_certificate_provider import RuBirthCertificateProvide
 from faker_ru_pii.ru_driver_license import RuDriverLicenseProvider
 from faker_ru_pii.ru_military_id_provider import RuMilitaryIdProvider
 from faker_ru_pii.ru_education_provider import RuEducationProvider
+from faker_ru_pii.ru_migration_card_provider import RuMigrationCardProvider
 
 
 providers = [
@@ -15,7 +16,8 @@ providers = [
     RuBirthCertificateProvider,
     RuDriverLicenseProvider,
     RuMilitaryIdProvider,
-    RuEducationProvider
+    RuEducationProvider,
+    RuMigrationCardProvider
 ]
 
 __all__ = providers

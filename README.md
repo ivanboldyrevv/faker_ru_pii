@@ -44,7 +44,6 @@ All standard `PassportProvider` methods (e.g. `passport_number()`) are overridde
 
 ### RuResidencePermitProvider
 
-
 - [X] номер вида на жительство (RuResidencePermitProvider.residence_permit_number) ?
 - [X] Серия + номер вида на жительство (RuResidencePermitProvider.residence_permit_full) ?
 - [X] Серия вида на жительство (RuResidencePermitProvider.residence_permit_serial) ?
@@ -213,9 +212,9 @@ All standard `PassportProvider` methods (e.g. `passport_number()`) are overridde
 - [x] номер телефона
 - [ ] Номера телефонов и электронной почты в не нормализованном виде
 - [ ] Наименование учебного заведения
-- [ ] серия диплома/сертификата после 2014 года
-- [ ] серия диплома/сертификата до 2014 года
-- [ ] номер диплома/сертификата
+- [X] серия диплома/сертификата после 2014 года
+- [X] серия диплома/сертификата до 2014 года
+- [X] номер диплома/сертификата
 - [x] название организации
 - [ ] Сведения о номере серии и дате выдачи трудовой книжки
 - [ ] военный билет

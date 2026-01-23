@@ -7,7 +7,8 @@ from faker_ru_pii import (
     RuBirthCertificateProvider,
     RuDriverLicenseProvider,
     RuMilitaryIdProvider,
-    RuEducationProvider
+    RuEducationProvider,
+    RuMigrationCardProvider
 )
 
 
@@ -30,7 +31,8 @@ PROVIDERS = [
     RuBirthCertificateProvider,
     RuDriverLicenseProvider,
     RuMilitaryIdProvider,
-    RuEducationProvider
+    RuEducationProvider,
+    RuMigrationCardProvider
 ]
 
 
