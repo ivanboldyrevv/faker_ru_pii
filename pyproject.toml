@@ -26,9 +26,8 @@ dependencies = [
     "Faker>=39.0.0",
 ]
 
-optional-dependencies = {
-    dev = ["pytest>=9.0.2"]
-}
+[project.optional-dependencies]
+dev = ["pytest>=9.0.2"]
 
 [project.urls]
 Homepage = "https://github.com/ivanboldyrevv/faker_ru_pii"
