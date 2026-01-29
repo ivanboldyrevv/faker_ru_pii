@@ -2,7 +2,9 @@
 
 A custom provider for the Faker library that generates realistic Russian personally identifiable information (PII) data for testing and development purposes. This extension adds comprehensive support for various Russian identity documents while maintaining data consistency and format compliance.
 
-Contributing: We welcome contributions! Please feel free to submit pull requests, report issues, or suggest new features
+Contributing: We welcome contributions! Please feel free to submit pull requests, report issues, or suggest new features.
+
+Note: This library is designed for testing and development purposes only. Generated data is fictional and should not be used for any official or legal purposes. Always comply with data protection regulations when handling PII data.
 
 ### RuPassportProvider
 
