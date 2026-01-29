@@ -43,7 +43,7 @@ class PassportProvider(FakerPassportProvider):
     _VALID_SUBJECT_CODES = _VALID_SUBJECT_CODES
 
     passport_series_formats = (
-        "####", "## ##"
+        "%###",
     )
 
     passport_only_number_formats = (
