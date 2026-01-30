@@ -6,6 +6,11 @@ Contributing: We welcome contributions! Please feel free to submit pull requests
 
 Note: This library is designed for testing and development purposes only. Generated data is fictional and should not be used for any official or legal purposes. Always comply with data protection regulations when handling PII data.
 
+### Install
+```bash
+pip install faker-ru-pii
+```
+
 ### RuPassportProvider
 
 Extends Faker's base [`PassportProvider`](https://faker.readthedocs.io/en/master/providers/faker.providers.passport.html).
